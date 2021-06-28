@@ -7,11 +7,11 @@
 <div class="menu">
     <a class="home" href="">Home</a>
     <li class="nav-ref">
-        <a pageScroll href="#describe">About Us</a>
-        <a href="#program">Programs</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#team">Our Team</a>
-        <a href="#contact">Contact Us</a>
+        <a (click)="scrollFunction('describe')">About Us</a>
+        <a (click)="scrollFunction('program')">Programs</a>
+        <a (click)="scrollFunction('gallery')">Gallery</a>
+        <a (click)="scrollFunction('team')">Our Team</a>
+        <a (click)="scrollFunction('contact')">Contact Us</a>
 
     </li>
     <div class="dropdown dropdown-home">
@@ -56,7 +56,7 @@
             </div>
         </div>
         <!---->
-        <div class="carousel-item">
+       <div class="carousel-item">
             <img class="d-block w-100" src="../../assets/images/medium-shot-people-graduating.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
                 <h5>TITLE</h5>
@@ -65,7 +65,7 @@
                     placeat cum incidunt maxime!</P>
                 <button href="'">Read More</button>
             </div>
-        </div>
+        </div> 
         <!---->
         <div class="carousel-item">
             <img class="d-block w-100" src="../../assets/images/rear-view-programmer-working-all-night-long.jpg"
@@ -257,7 +257,7 @@
 
 <!--End of Team  -->
 
-<div class="gallery">
+<div class="gallery" id="gallery">
     <div class="body-v">
         <h1>GALLERY</h1>
         <div class="container-v">

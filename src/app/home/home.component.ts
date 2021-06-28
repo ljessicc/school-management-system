@@ -3,6 +3,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 import {  faCircle} from '@fortawesome/free-solid-svg-icons/faCircle';
 import {faHouseUser} from '@fortawesome/free-solid-svg-icons/faHouseUser';
 import { faSquare } from '@fortawesome/free-solid-svg-icons';
+import { ViewportScroller } from '@angular/common';
 
 
 
@@ -18,10 +19,15 @@ export class HomeComponent implements OnInit {
   houseIcon = faHouseUser;
   squareIcon =faSquare;
 
-  constructor() { }
+  constructor(public vps:ViewportScroller) { }
 
   ngOnInit(): void {
     
+  }
+
+  // function that takes in an anchor as a string and scrolls to the anchor
+  scrollFunction(anchor:string) {
+    this.vps.scrollToAnchor(anchor);
   }
 
 }
